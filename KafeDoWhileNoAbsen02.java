@@ -7,7 +7,7 @@ public class KafeDoWhileNoAbsen02 {
         String namaPelanggan;
         int hargaKopi=12000,hargaTeh=7000,hargaRoti=20000;
         do {
-            System.out.println("Masukkan nama pelanggan(ketik 'batal' untuk keluar): ");
+            System.out.print("Masukkan nama pelanggan(ketik 'batal' untuk keluar): ");
             namaPelanggan=sc.nextLine();
             if (namaPelanggan.equalsIgnoreCase("batal")) {
               System.out.println("Transaksi Dibatalkan."); 
