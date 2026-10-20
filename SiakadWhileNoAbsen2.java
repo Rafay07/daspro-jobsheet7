@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class SiakadWhileNoAbsen2 {
+    public static void main(String[] args) {
+        int jml,nilai=0,i=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Masukkan Jumlah Mahasiswa : ");
+        jml=sc.nextInt();
+        while (i<jml) {
+            System.out.print("Masukkan Nilai Mahasiswa ke-"+ (i+1)+": ");
+            nilai=sc.nextInt();
+            if (nilai<0 ||  nilai>100) {
+                System.out.println("Nilai tidak valid,silahkan input ulang!");
+                continue;
+            }
+            if (nilai>80 && nilai <=100) {
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah A");
+            } else if (nilai>73 && nilai<=80 ) {
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah B+");
+            } else if (nilai>65 && nilai <=73){
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah B");
+            } else if (nilai>60 && nilai <=65){
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah C+");
+            } else if (nilai>50 && nilai <=60){
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah C");
+            } else if (nilai>39 && nilai <=50){
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah D");
+            } else {
+                System.out.println("Nilai Mahasiswa ke-"+(i+1) +" Adalah E");
+             
+            }
+            i++;
+        }
+        sc.close();
+    }
+}
